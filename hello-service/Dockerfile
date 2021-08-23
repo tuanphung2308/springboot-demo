@@ -3,11 +3,11 @@
 #
 FROM maven:3.6.0-jdk-11-slim AS build
 RUN mkdir /home/app
-COPY /* /home/app/
+COPY ./* /home/app/
 RUN cd /home/app
 RUN pwd; ls -l
-RUN errorhereplease
-# RUN mvn -f /home/app/pom.xml clean package
+# RUN errorhereplease
+RUN mvn -f /home/app/pom.xml clean package
 
 #
 # Package stage
