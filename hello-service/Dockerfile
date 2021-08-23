@@ -2,13 +2,8 @@
 # Build stage
 #
 FROM maven:3.6.0-jdk-11-slim AS build
-RUN pwd; ls -l
-RUN mkdir /home/app
-COPY -a ./. /home/app/
-RUN cd /home/app
-RUN pwd; ls -l
-# RUN errorhereplease
-# RUN mvn -f /home/app/pom.xml clean package
+COPY hello-service-app /home/app/hello-service-app
+RUN mvn -f /home/app/pom.xml clean package
 
 #
 # Package stage
