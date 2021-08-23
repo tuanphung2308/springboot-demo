@@ -7,7 +7,7 @@ COPY ./* /home/app/
 RUN cd /home/app
 RUN pwd; ls -l
 # RUN errorhereplease
-RUN mvn -f /home/app/pom.xml clean package
+# RUN mvn -f /home/app/pom.xml clean package
 
 #
 # Package stage
