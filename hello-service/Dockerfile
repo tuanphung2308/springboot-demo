@@ -2,6 +2,7 @@
 # Build stage
 #
 FROM maven:3.6.0-jdk-11-slim AS build
+RUN pwd; ls -l
 RUN mkdir /home/app
 COPY ./* /home/app/
 RUN cd /home/app
