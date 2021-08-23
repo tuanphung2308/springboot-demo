@@ -3,7 +3,7 @@ cd /home/ec2-user/
 echo "Files in user directory"
 pwd; ls -l
 echo "--------------------------------------------------"
-cd /home/ec2-user/springboot-hello
+cd /home/ec2-user/spring-boot-hello
 # List all file first
 echo "Files in source directory"
 pwd; ls -l
