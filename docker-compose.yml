@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  hello-service:
+    container_name: hello-service
+    build:
+      context: hello-service
+    restart: always
+    ports:
+      - 8080:8080
+    healthcheck:
+      test: "exit 0"
