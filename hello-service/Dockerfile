@@ -2,7 +2,7 @@
 # Build stage
 #
 FROM maven:3.6.0-jdk-11-slim AS build
-COPY /* /home/hello-service-app
+COPY /* /home/hello-service-app/
 RUN mvn -f /home/hello-service-app/pom.xml clean package
 
 #
